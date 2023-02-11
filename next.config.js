@@ -10,6 +10,9 @@ const nextConfig = {
   env: {
     BASE_URL: process.env.BASE_URL,
   },
+  experimental: {
+    webVitalsAttribution: ['FCP', 'LCP', 'CLS', 'FID', 'TTFB', 'INP']
+  }
 };
 
 module.exports = nextConfig;

@@ -1,13 +1,13 @@
 import '../styles/globals.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-import type { AppProps, NextWebVitalsMetric } from 'next/app'
+import type { NextWebVitalsMetric } from 'next/app'
 export function reportWebVitals(metric: NextWebVitalsMetric) {
   console.log(metric)
 }
 
 import Layout from '../components/Layout';
-//import type { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 
 const queryClient = new QueryClient();
 

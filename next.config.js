@@ -12,7 +12,8 @@ const nextConfig = {
   },
   experimental: {
     webVitalsAttribution: ['FCP', 'LCP', 'CLS', 'FID', 'TTFB', 'INP']
-  }
+  },
+  output: 'standalone'
 };
 
 module.exports = nextConfig;
